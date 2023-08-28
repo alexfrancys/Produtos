@@ -35,3 +35,7 @@ Mini Projeto de apresentação - CRUD de Produtos em .Net 6
 - Exemplo validação valor maior que zero:
   
 ![Validação](https://github.com/alexfrancys/Produtos/assets/14251634/2f963348-04fd-43a4-849c-4be98bb07a25)
+
+**Endpoints:**
+![Endpoints](https://github.com/alexfrancys/Produtos/assets/14251634/4ae71125-2aad-47c1-a383-207ee17eb119)
+
