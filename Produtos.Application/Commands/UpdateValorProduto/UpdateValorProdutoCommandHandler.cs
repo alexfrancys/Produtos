@@ -18,7 +18,6 @@ namespace Produtos.Application.Commands.UpdateValorProduto
 
             if (produto is not null)
             {
-
                 await _produtoRepository.UpdateValorProduto(produto.Id, request.Valor);
 
                 return new UpdateValorProdutoCommandResult

@@ -1,6 +1,10 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Produtos.Application.Commands.CreateProduto;
+using Produtos.Application.Commands.UpdateValorProduto;
 using Produtos.Application.Queries.GetProdutoById;
 using Produtos.Domain.ProdutoAggregate;
 using Produtos.Infra;
@@ -31,6 +35,11 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddControllers()
     .AddJsonOptions(options => { options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); });
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+builder.Services.AddValidatorsFromAssemblyContaining(typeof(UpdateValorProdutoCommandValidator));
+
 
 // Infra
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();

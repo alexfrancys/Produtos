@@ -8,6 +8,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
 		<PackageReference Include="MediatR" Version="12.1.1" />
 		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.21">
@@ -23,7 +24,7 @@
 	</ItemGroup>
 	
 	<ItemGroup>
-	<InternalsVisibleTo Include="Produtos.IntegrationTests"/>	
+	<InternalsVisibleTo Include="Produtos.IntegrationTests" />	
 	</ItemGroup>
 
 </Project>
